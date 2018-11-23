@@ -47,6 +47,19 @@ body{
     50% {left: 450px;}
     100%{left: 600px;}
 }
+@keyframes smokemovement {
+    0% {
+        top: 500px;
+        opacity:1;
+    }
+    70%{
+        opacity:0.0;
+    }
+    100% {
+        opacity:0.0;
+        top: -800px;
+    }
+}
 #cloud1{
     position:absolute;
     top:80px;
@@ -63,7 +76,15 @@ body{
 
 #mountains{
     position:absolute;
-    top:-100px;
+    top:300px;
+    left:0px;
+    transform: translate(0px, 0px);
+    transition: all 1s;
+}
+
+#firelight{
+    position:absolute;
+    top:0px;
     left:0px;
     transform: translate(0px, 0px);
     transition: all 1s;
@@ -71,15 +92,17 @@ body{
 
 #smoke{
     position:absolute;
-    top:238px;
-    left:239px;
+    top:0px;
+    left:439px;
     transform: translate(0px, 0px);
     transition: all 1s;
+    animation: smokemovement 10s infinite; 
+    animation-timing-function: linear;
 }
 
 #treeline{
     position:absolute;
-    top:825px;
+    top:625px;
     left:0px;
     transform: translate(0px, 0px);
     transition: all 1s;
