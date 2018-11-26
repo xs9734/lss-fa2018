@@ -11,12 +11,23 @@ window.onscroll = function(){
     //img1.style.top = distance +200 + "px";
     //img1.style.opacity = distance/200;
 
-
-    if(distance > 99 && distance < 199){
+    if(distance > 20 && distance < 98){
+        document.getElementById("mountains").style.transform = "translate(0px, -25px)";
+        document.getElementById("firelight").style.transform = "translate(0px, -50px)";
+        document.getElementById("smoke").style.transform = "translate(0px, -75px)";
+        document.getElementById("treeline").style.transform = "translate(0px, -100px)";
+    }
+    else if(distance > 99 && distance < 150){
         document.getElementById("mountains").style.transform = "translate(0px, -50px)";
         document.getElementById("firelight").style.transform = "translate(0px, -75px)";
         document.getElementById("smoke").style.transform = "translate(0px, -100px)";
         document.getElementById("treeline").style.transform = "translate(0px, -150px)";
+    }
+    else if(distance > 151 && distance < 198){
+        document.getElementById("mountains").style.transform = "translate(0px, -75px)";
+        document.getElementById("firelight").style.transform = "translate(0px, -100x)";
+        document.getElementById("smoke").style.transform = "translate(0px, -150px)";
+        document.getElementById("treeline").style.transform = "translate(0px, -200px)";
     }
     else if(distance > 199 && distance < 299){
         document.getElementById("mountains").style.transform = "translate(0px, -100px)";
