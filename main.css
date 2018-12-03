@@ -16,7 +16,7 @@ body{
 #counter{
     position:absolute;
     padding:10px;
-    top: 55px;
+    top: -100px;
     left:10px;
     background: blue;
     height:20px;

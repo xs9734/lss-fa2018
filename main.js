@@ -6,7 +6,7 @@ window.onscroll = function(){
     
     document.getElementById('counter').innerHTML = distance;
 
-    counter.style.top = distance + 20 + "px";
+    //counter.style.top = distance + 20 + "px";
     //img1.style.left = distance + "px";
     //img1.style.top = distance +200 + "px";
     //img1.style.opacity = distance/200;
