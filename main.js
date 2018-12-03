@@ -11,6 +11,20 @@ window.onscroll = function(){
     //img1.style.top = distance +200 + "px";
     //img1.style.opacity = distance/200;
 
+    if(distance > 3150 && distance < 3500){
+        fires.style.opacity = "1";
+    }
+    else{
+        fires.style.opacity = "0"; 
+    }
+    
+    if(distance > 4150 && distance < 4500){
+        acres.style.opacity = "1";
+    }
+    else{
+        acres.style.opacity = "0"; 
+    }
+
     if(distance > 20 && distance < 98){
         document.getElementById("mountains").style.transform = "translate(0px, -25px)";
         document.getElementById("firelight").style.transform = "translate(0px, -50px)";
